@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+/* 전체 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/h.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.start {
+  font-family: "Black Han Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 시작화면 */
+.main-title {
+  font-size: 35px;
+  color: white;
+}
+
+.start-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-start {
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: #1f1f1f;
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.btn-start:hover {
+  color: black;
+  background-color: white;
+  border: #1f1f1f;
+  animation: hoverAni 3s ease-in-out;
+}
+
+@keyframes hoverAni {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+/* 문제 화면 */
+.question {
+  display: none;
+  position: fixed;
+  top: 300px;
+}
+
+#question-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#title {
+  color: white;
+  font-size: 16px;
+}
+
+.question-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-answer {
+  background-color: #1f1f1f;
+  border: #1f1f1f;
+  width: 288px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 20px 10px;
+}
+
+.btn-answer:hover {
+  background-color: #ff9300 !important;
+  border: #1f1f1f !important;
+  width: 288px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.progress-bar {
+  background-color: black;
+}
+
+.progress {
+  background-color: white;
+  margin-top: 20px;
+}
+
+.question-content {
+  font-size: 16px;
+  color: #ff9300;
+}
+
+/* 결과 화면 */
+#result-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-message {
+  color: #ff9300;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.result-animal {
+  font-size: 18px;
+  font-weight: 100;
+  color: #ebebeb;
+}
+
+.result-explain {
+  font-size: 13px;
+  font-weight: normal;
+  color: #ff9300;
+}
+
+.share-message {
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.result {
+  display: none;
+}
+
+#Picture {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
